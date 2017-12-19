@@ -60,14 +60,15 @@
       WebAssembly.instantiate(bytes, importObject)
     ).then(results => {
       const nextStep = results.instance.exports.nextStep;
-      //setInterval(() => {
+      setInterval(() => {
         nextStep(width, height);
         show();
-      //}, 1000);
+      }, 1000);
     });
     </script>
   </head>
   <body>
+    please check devconsole
   </body>
 </html>
 
